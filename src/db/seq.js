@@ -1,6 +1,6 @@
 /**
  * @description sequelize 实例
- * @author 双越老师
+ * @author wuwx
  */
 
 const Sequelize = require('sequelize')
@@ -13,6 +13,7 @@ const conf = {
     dialect: 'mysql'
 }
 
+// 测试环境不打印sql语句
 if (isTest) {
     conf.logging = () => {}
 }
